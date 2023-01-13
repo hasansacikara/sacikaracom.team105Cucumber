@@ -1,10 +1,13 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import pages.EditorPage;
+import utilities.Driver;
 
 public class EditorStepdefinitions {
     EditorPage editorPage= new EditorPage();
@@ -55,5 +58,14 @@ public class EditorStepdefinitions {
         String actualIlkIsimStr= editorPage.ilkIsimElementi.getText();
 
         Assert.assertTrue(actualIlkIsimStr.contains(firstName));
+    }
+
+    @And("acilan tüm sayfalari kapatir")
+    public void acilanTümSayfalariKapatir() {
+        Driver.quitDriver();
+    }
+
+    @Given("kullanici {string} anasayfaya gider")
+    public void kullaniciAnasayfayaGider(String anasayfaya) {
     }
 }

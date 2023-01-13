@@ -16,7 +16,7 @@ Feature: US1010 Kullanici Scenario Outline ile Editor sayfasinda kayit olusturur
     And Create tusuna basar
     When kullanici "<firstName>" ile arama yapar
     Then isim bolumunde "<firstName>" oldugunu dogrular
-    Then sayfayi kapatir
+
 
     Examples:
       |firstName  |lastName |position |office   |Extension   |startDate   |salary |

@@ -4,7 +4,5 @@ Feature: US1001 Kullanici amazonda test yapar
 
     Given kullanici amazon anasayfaya gider
     Then amazon arama kutusuna Nutella yazip aratir
-    And arama sunuclarinin Nutella icerdigini test eder
+    And arama sonuclarinin Nutella icerdigini test eder
     Then sayfayi kapatir
-
-    

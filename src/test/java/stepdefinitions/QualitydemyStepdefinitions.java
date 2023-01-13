@@ -50,9 +50,9 @@ public class QualitydemyStepdefinitions {
 
     }
 
-    @Given("kullanici {string} anasayfaya gider")
+    @Given("kullanici Amazon anasayfaya gider")
     public void kullaniciAnasayfayaGider(String arg0) {
-            qualitydemyPage.kullaniciEmailKutusu.sendKeys();
+
 
     }
 
@@ -87,5 +87,7 @@ public class QualitydemyStepdefinitions {
     public void girisYapilamadiginiTestEder() {
 
     }
+
+
 }
 
