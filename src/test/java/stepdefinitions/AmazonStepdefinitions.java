@@ -12,7 +12,10 @@ import utilities.Driver;
 
 public class AmazonStepdefinitions {
 
+
     AmazonPage amazonPage= new AmazonPage();
+
+
 
     @Given("kullanici amazon anasayfaya gider")
     public void kullanici_amazon_anasayfaya_gider() {
@@ -67,4 +70,11 @@ public class AmazonStepdefinitions {
 
             }
         }
+
+    @Then("sayfayi kapatir")
+    public void sayfayiKapatir() {
+        Driver.closeDriver();
+    }
+
+
     }

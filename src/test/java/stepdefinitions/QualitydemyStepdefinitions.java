@@ -89,5 +89,9 @@ public class QualitydemyStepdefinitions {
     }
 
 
+    @Then("amazon arama kutusuna Java yazip aratir")
+    public void amazonAramaKutusunaJavaYazipAratir() {
+            qualitydemyPage.basariliGirisCoursesLinki.sendKeys();
+    }
 }
 
